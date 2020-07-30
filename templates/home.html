@@ -1,20 +1,39 @@
-
 <!DOCTYPE html> 
-  
 <html> 
 <head> 
-    <title>For loop in Flask</title> 
+    <title>Jobs</title> 
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <style>
+        h1 {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:visited{ 
+            color:black;
+        }
+        a:hover{
+            color: firebrick;
+        }
+    </style>
 </head> 
 <body> 
-  
-<ol> 
-<!-- For loop logic of jinja template -->
-{%for i in range(0, len)%} 
-  
-    <li><a href="{{link_list[i]}}">{{job_list[i]}}</a></li><br>
-{%endfor%} 
-  
-</ol> 
-  
+        <h1>IT Jobs, Employment</h1>
+    <ol> 
+    <!-- For loop logic of jinja template -->
+    {%for i in range(0, len)%} 
+
+        <li><a href="{{link_list[i]}}">{{job_list[i]}}</a></li><br>
+        
+    {%endfor%} 
+
+    </ol> 
+
 </body> 
 </html> 
