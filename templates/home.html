@@ -29,7 +29,7 @@
     <!-- For loop logic of jinja template -->
     {%for i in range(0, len)%} 
 
-        <li><a href="{{link_list[i]}}">{{job_list[i]}}</a></li><br>
+        <li><a onClick="parent.open('{{link_list[i]}}')">{{job_list[i]}}</a></li><br>
         
     {%endfor%} 
 
